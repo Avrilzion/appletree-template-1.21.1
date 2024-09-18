@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "appletree",
+	"version": "${version}",
+	"name": "Appletree",
+	"description": "添加了金苹果合成配方",
+	"authors": [
+		"zionc"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/appletree/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.apple.tree.Appletree"
+		],
+		"fabric-datagen": [
+			"com.apple.tree.AppletreeDataGenerator"
+		],
+		"client": [
+			"com.apple.tree.AppletreeClient"
+		]
+	},
+	"mixins": [
+		"appletree.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
